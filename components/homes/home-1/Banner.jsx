@@ -197,131 +197,18 @@ export default function Banner() {
                 Solutions Like CRM, ERP And More
               </p>
               <div className="grid-button flex gap10 items-center">
-                <a href="#" className="tf-button">
+                <a href="#service1" className="tf-button">
                   <span>Automate & Optimize</span>
                 </a>
-                {/* <span>Or</span> */}
-                <a href="#" className="tf-button active">
+                <a href="#service2" className="tf-button active">
                   <span>Build & Integrate</span>
                 </a>
-                <a href="#" className="tf-button active">
+                <a href="#service3" className="tf-button active">
                   <span>E-Learning Setup</span>
                 </a>
               </div>
             </div>
           </div>
-          {/* <div className="col-xl-6 col-12 images hidden">
-            <div className=" relative w-full h-full">
-              <div className="border-dashed-line" />
-              <div className="box-1">
-                <div className="wrap">
-                  <p>
-                    <a href="#">Open AI Editor</a>
-                  </p>
-                  <p className="active">
-                    <a href="#">Customize Post</a>
-                  </p>
-                  <p>
-                    <a href="#">Download Results</a>
-                  </p>
-                  <Image
-                    src="/assets/images/item-background/hand.png"
-                    width={60}
-                    height={96}
-                    alt="image"
-                  />
-                </div>
-              </div>
-              <div className="box-2">
-                <div className="wrap">
-                  <p>
-                    <a href="#">Cerate your Ai Account</a>
-                  </p>
-                  <div className="ellipse" />
-                  <div className="ellipse-1" />
-                  <div className="ellipse-2" />
-                  <Image
-                    src="/assets/images/item-background/hand.png"
-                    width={60}
-                    height={96}
-                    alt="image"
-                  />
-                </div>
-              </div>
-              <div className="wrap-user item-1">
-                <h4 className="name">
-                  <a href="#">Thomas C. Turner</a>
-                </h4>
-                <p>nature &amp; me before sunset</p>
-                <div className="image">
-                  <Image
-                    src="/assets/images/avatar/user-01.png"
-                    width={215}
-                    height={215}
-                    alt="image"
-                  />
-                  <div className="icon">
-                    <i className="icon-facebook" />
-                  </div>
-                  <div className="counter-like counter">
-                    <div className="number-counter">
-                      <Counter parentClass={"number"} max={3} min={0} />
-                      k+
-                    </div>
-                    <i className="icon-heart" />
-                  </div>
-                </div>
-              </div>
-              <div className="wrap-user item-2">
-                <h4 className="name">
-                  <a href="#">Jason A. Hunter</a>
-                </h4>
-                <p>nature &amp; me before sunset</p>
-                <div className="image">
-                  <Image
-                    src="/assets/images/avatar/user-02.png"
-                    width={216}
-                    height={216}
-                    alt="image"
-                  />
-                  <div className="icon">
-                    <i className="icon-instagram" />
-                  </div>
-                  <div className="counter-like counter">
-                    <div className="number-counter">
-                      <Counter parentClass={"number"} max={3} min={0} />
-                      k+
-                    </div>
-                    <i className="icon-heart" />
-                  </div>
-                </div>
-              </div>
-              <div className="wrap-user item-3">
-                <h4 className="name">
-                  <a href="#">Willard I. Rivera</a>
-                </h4>
-                <p>nature &amp; me before sunset</p>
-                <div className="image">
-                  <Image
-                    src="/assets/images/avatar/user-03.png"
-                    width={216}
-                    height={216}
-                    alt="image"
-                  />
-                  <div className="icon">
-                    <i className="icon-tiktok" />
-                  </div>
-                  <div className="counter-like counter">
-                    <div className="number-counter">
-                      <Counter parentClass={"number"} max={4} min={0} />
-                      m+
-                    </div>
-                    <i className="icon-heart" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>*/}
         </div>
       </div>
     </div>

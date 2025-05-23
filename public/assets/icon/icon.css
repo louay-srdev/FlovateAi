@@ -143,7 +143,7 @@
 }
 .icon-gift:before {
   content: "\e92b";
-  color: #fff;
+  color: #3468f0;
 }
 .icon-laptop-code:before {
   content: "\e92c";
@@ -151,7 +151,7 @@
 }
 .icon-rocket-launch:before {
   content: "\e92e";
-  color: #fff;
+  color: #3468f0;
 }
 .icon-tick:before {
   content: "\e906";
@@ -251,3 +251,4 @@
 .icon-arrow-down:before {
   content: "\e915";
 }
+

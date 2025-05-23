@@ -12,11 +12,11 @@ export default function Partners() {
     slidesPerView: 5,
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 80,
       },
       500: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 100,
       },
       768: {

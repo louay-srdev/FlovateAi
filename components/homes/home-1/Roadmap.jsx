@@ -8,10 +8,10 @@ export default function Roadmap() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center wow fadeInUp">
-              <h6>Working Process</h6>
+              <h6>Our Client-Focused Project Approach</h6>
               <div className="main-title">
-                Create Engaging Social Media <br />
-                Content <span className="animation-text">in 4 Steps</span>
+              We follow a clear, collaborative process <br />to ensure project success and 
+                Content <span className="animation-text">client satisfaction</span>
               </div>
             </div>
           </div>

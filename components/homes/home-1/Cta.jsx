@@ -12,23 +12,16 @@ export default function Cta() {
               <div className="ellipse item3" />
               <div className="ellipse item4" />
               <div className="cta-title">
-                <h6>Get More Update</h6>
-                <h2>
-                  Sign Up for Your Free <br /> MunAi{" "}
-                  <span className="animation-text">Account!</span>
-                </h2>
+                <h2>Empower your business flow.</h2>
               </div>
               <div className="cta-content">
                 <p>
-                  Sed ut perspiciatis unde omnis natus sit voluptate <br />{" "}
-                  totam rem aperiam eaque inventore
+                  Let's chat about your specific challenges and see how Flovate can help. <br />
+                  Book a free, no-obligation Discovery Call today.
                 </p>
                 <div className="flex gap20">
                   <a href="#" className="tf-button style-1">
-                    Start Your Trial Now <i className="icon-arrow-right2" />
-                  </a>
-                  <a href="#" className="tf-button style-1 active">
-                    Contact Us <i className="icon-arrow-right2" />
+                    Book Your Free Call Now <i className="icon-arrow-right2" />
                   </a>
                 </div>
               </div>
