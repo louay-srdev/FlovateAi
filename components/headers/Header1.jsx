@@ -30,7 +30,7 @@ export default function Header1() {
           <div id="site-logo-inner">
             <Link href={`/`} rel="home" className="main-logo">
               <Image
-                width={160}
+                width={180}
                 height={80}
                 id="logo_header"
                 src="/assets/images/logo/english-logo.png"

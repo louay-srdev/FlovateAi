@@ -1212,7 +1212,7 @@ a:focus {
 }
 
 .header-inner {
-  margin-top: -50px;
+  margin-top: -60px;
   padding: 29px 52px 31px 70px;
   display: flex;
   justify-content: space-between;
@@ -1220,7 +1220,7 @@ a:focus {
 }
 
 #site-logo {
-  margin-right: 101px;
+  margin-right: 50px;
 }
 
 /* main-nav */
