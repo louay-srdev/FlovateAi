@@ -31,7 +31,7 @@ export default function Home() {
           <Features2 />
           <Service />
           <Roadmap />
-          <Pricing />
+          {/* <Pricing /> */}
           <Faq />
           <Cta />
           <Footer1 />

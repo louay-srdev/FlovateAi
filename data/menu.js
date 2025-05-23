@@ -42,10 +42,6 @@ export const menuItems = [
         text: "404",
         url: "/404",
       },
-      {
-        text: "Price",
-        url: "/price",
-      },
     ],
     hasChildren: true,
   },
