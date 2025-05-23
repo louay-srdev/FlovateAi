@@ -34,7 +34,7 @@ export default function MobileNav() {
     return links.some((elm) => elm.url.split("/")[1] == pathname.split("/")[1]);
   };
   return (
-    <nav id="mobile-main-nav" className="mobile-main-nav">
+    <nav id="mobile-main-nav" className="mobile-main-nav" >
       <ul id="menu-mobile-menu" className="menu">
         {menuItems.map((elm, i) => (
           <li

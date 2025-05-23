@@ -26,14 +26,22 @@ export default function Footer1() {
             <div className="footer-top">
               <div className="logo-footer" id="logo-footer">
                 <Link href={`/`}>
-                  <Image
-                    id="logo_footer"
-                    src="/assets/images/logo/logo.png"
-                    alt="image"
-                    width={166}
-                    height={40}
-                    data-retina="/assets/images/logo/logo@2x.png"
-                  />
+                  <div className="flex items-center">
+                    <Image
+                      id="logo_header"
+                      src="/assets/images/logo/icon-02.png"
+                      width={80}
+                      alt="image"
+                      height={80}
+                      data-retina="/assets/images/logo/logo@2x.png"
+                    />
+                    <Image
+                      src="/assets/images/logo/english-logo.png"
+                      width={206}
+                      alt="image"
+                      height={150}
+                    />
+                  </div>
                 </Link>
               </div>
               <div className="avatar-wrapper">
