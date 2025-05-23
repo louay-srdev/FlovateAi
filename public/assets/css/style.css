@@ -1206,12 +1206,13 @@ a:focus {
   border: none;
   padding-right: 0 !important;
   background: transparent;
+
   position: relative;
   margin-bottom: -105px;
 }
 
 .header-inner {
-  margin-top: -90px;
+  margin-top: -50px;
   padding: 29px 52px 31px 70px;
   display: flex;
   justify-content: space-between;
@@ -1219,14 +1220,14 @@ a:focus {
 }
 
 #site-logo {
-  margin-right: 10px;
+  margin-right: 101px;
 }
+
 /* main-nav */
 .main-nav {
   display: flex;
   gap: 30px;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .menu-primary-menu {
@@ -1386,8 +1387,7 @@ a:focus {
 /* Mobile Menu Button */
 .mobile-button {
   display: none;
-  margin-top: 25px;
-  /*  position: absolute;*/
+  position: absolute;
   width: 26px;
   height: 26px;
   top: 50%;

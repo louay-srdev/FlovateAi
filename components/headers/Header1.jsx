@@ -30,10 +30,10 @@ export default function Header1() {
           <div id="site-logo-inner">
             <Link href={`/`} rel="home" className="main-logo">
               <Image
-                width={240}
+                width={160}
                 height={80}
                 id="logo_header"
-                src="/assets/images/logo/flovate-logos/english logo flovate-01.svg"
+                src="/assets/images/logo/english-logo.png"
                 alt="Flovate Logo"
               />
             </Link>
