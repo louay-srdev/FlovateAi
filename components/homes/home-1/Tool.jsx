@@ -16,20 +16,37 @@ export default function Tool() {
                 <br />
                 <span className="animation-text">{t("toolAnimated")}</span>
               </div>
+              <p className="subtitle mt-4">
+                {t("toolDescription")}
+              </p>
             </div>
           </div>
-          {tools.map((tool, index) => (
-            <div className="col-md-5" key={index}>
+          {tools(t).map((tool, index) => (
+            <div className="col-md-6 col-lg-3" key={index}>
               <div
                 className={`wg-tool wow fadeInUp`}
                 data-wow-delay={tool.delay}
               >
-                <div className={`icon ${tool.iconClass}`} />
+                <div className="tool-icon-wrapper">
+                  <div className={`icon ${tool.iconClass}`} />
+                  {tool.isNew && <span className="new-badge">New</span>}
+                </div>
                 <h3>
-                  <a href="#">{t(tool.title)}</a>
+                  <a href="#">{tool.title}</a>
                 </h3>
-                <p>{t(tool.description)}</p>
-                <div className="order">{tool.order}</div>
+                <p>{tool.description}</p>
+                <div className="tool-footer">
+                  <div className="order">{tool.order}</div>
+                  {tool.features && (
+                    <div className="tool-features">
+                      {tool.features.map((feature, idx) => (
+                        <span key={idx} className="feature-tag">
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}

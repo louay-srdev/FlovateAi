@@ -12,7 +12,7 @@ export function LanguageProvider({ children }) {
     setLanguage(newLang);
     // Update document direction based on language
     document.documentElement.lang = newLang;
-    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+    //document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
   };
 
   const t = (key) => {
