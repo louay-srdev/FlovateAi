@@ -7,7 +7,7 @@ export default function ServicesOverview() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-130" style={{ background: "#f9fafb", marginTop: "100px" }}>
+    <section id="services-overview" className="py-130" style={{ background: "#f9fafb", marginTop: "200px", paddingTop:"50px"}}>
       <div className="themesflat-container">
         <div className="heading-section text-center wow fadeInUp ">
           <div className="main-title py-5">
@@ -18,7 +18,7 @@ export default function ServicesOverview() {
         <div className="row gy-5 py-5">
           {/* Service 1 */}
           <div className="col-md-4">
-            <div className="bg-white rounded-4 shadow-sm p-4 text-center h-100">
+            <div id="service-automate" className="bg-white rounded-4 shadow-sm p-4 text-center h-100">
               <div
                 className="d-inline-flex justify-content-center align-items-center mb-4"
                 style={{
@@ -40,7 +40,7 @@ export default function ServicesOverview() {
 
           {/* Service 2 */}
           <div className="col-md-4">
-            <div className="bg-white rounded-4 shadow-sm p-4 text-center h-100">
+            <div id="service-integrate" className="bg-white rounded-4 shadow-sm p-4 text-center h-100">
               <div
                 className="d-inline-flex justify-content-center align-items-center mb-4"
                 style={{
@@ -62,7 +62,7 @@ export default function ServicesOverview() {
 
           {/* Service 3 */}
           <div className="col-md-4">
-            <div className="bg-white rounded-4 shadow-sm p-4 text-center h-100">
+            <div id="service-learn" className="bg-white rounded-4 shadow-sm p-4 text-center h-100">
               <div
                 className="d-inline-flex justify-content-center align-items-center mb-4"
                 style={{

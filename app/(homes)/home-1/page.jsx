@@ -1,3 +1,4 @@
+"use client";
 import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import Banner from "@/components/homes/home-1/Banner";
@@ -18,11 +19,35 @@ import Service1 from '@/components/homes/home-1/Service1';
 import Service2 from '@/components/homes/home-1/Service2';
 import Service3 from '@/components/homes/home-1/Service3';
 import ServicesOverview from "@/components/homes/home-1/ServiceOverview";
-export const metadata = {
-  title: "Home 1 || MunAi - AI Writer & Copywriting Nextjs Template",
-  description: "MunAi - AI Writer & Copywriting Nextjs Template",
-};
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    function handleAnchorClick(e) {
+      const anchor = e.target.closest('a[href^="#"]');
+      if (anchor) {
+        const id = anchor.getAttribute("href").slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          // Scroll to center
+          const rect = el.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const offset = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
+          window.scrollTo({ top: offset, behavior: "smooth" });
+
+          // Highlight card
+          el.classList.add("card-highlight");
+          setTimeout(() => {
+            el.classList.remove("card-highlight");
+          }, 3000);
+        }
+      }
+    }
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
+  }, []);
+
   return (
     <>
       <div id="wrapper">

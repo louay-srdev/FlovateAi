@@ -197,13 +197,13 @@ export default function Banner() {
                 Solutions Like CRM, ERP And More
               </p>
               <div className="grid-button flex gap10 items-center">
-                <a href="#service1" className="tf-button">
+                <a href="#service-automate" className="tf-button">
                   <span>Automate & Optimize</span>
                 </a>
-                <a href="#service2" className="tf-button active">
+                <a href="#service-integrate" className="tf-button active">
                   <span>Build & Integrate</span>
                 </a>
-                <a href="#service3" className="tf-button active">
+                <a href="#service-learn" className="tf-button active">
                   <span>E-Learning Setup</span>
                 </a>
               </div>
