@@ -1,7 +1,9 @@
 import Counter from "@/components/common/Counter";
 import React from "react";
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Result() {
+  const { t } = useLanguage();
   return (
     <div className="wg-result pt-130">
       <div className="themesflat-container">
@@ -9,12 +11,12 @@ export default function Result() {
           <div className="col-12">
             <div className="heading-section text-center wow fadeInUp">
               <div className="sub-title">
-                Professionals &amp; teams choose MunAi
+                {t('resultProfessionalsTeams')}
               </div>
               <div className="main-title">
-                Best Experience &amp; Power Ai Content&nbsp;
-                <br /> Generator That Delivers{" "}
-                <span className="animation-text">Premium Results</span>
+                {t('resultBestExperience')}
+                <br />
+                <span className="animation-text">{t('resultPremiumResults')}</span>
               </div>
             </div>
             <div className="counter text-center">

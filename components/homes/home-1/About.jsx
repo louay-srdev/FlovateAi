@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <div className="wg-about pt-130">
       <div className="themesflat-container">
@@ -8,21 +12,15 @@ export default function About() {
           <div className="col-12">
             <div className="heading-section text-center wow fadeInUp" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px'}}>
               <div className="main-title">
-                We are here for Entrepreneurs, Businesses,
-                <br />
-                and Teams
+                {t('aboutTitle')}
               </div>
               <br />
 
               <div className="sub-title mt-20" style={{ flex: 'flex-wrap' }}>
-                To transform their operations from{" "}
-                <strong>friction to flow</strong> through a wide range of
-                <span className="tf-color"> AI-driven solutions</span>,
-                <br />
-                powered by our trusted partners.
+                {t('aboutSubtitle')}
               </div>
               <a href="#contact" className="tf-button get-start mx-auto mt-30">
-                Get in Touch
+                {t('getInTouch')}
               </a>
             </div>
           </div>

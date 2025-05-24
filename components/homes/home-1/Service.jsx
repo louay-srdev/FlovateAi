@@ -1,17 +1,20 @@
+"use client";
 import { services } from "@/data/services";
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Helpfull() {
+  const { t } = useLanguage();
+
   return (
     <div className="helpful pt-130">
       <div className="themesflat-container">
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center wow fadeInUp">
-              <h6>What We Provide</h6>
+              <h6>{t('serviceTitle')}</h6>
               <div className="main-title">
-                Discover More Helpful Social Media <br /> Artificial{" "}
-                <span className="animation-text">Intelligence Features</span>
+                {t('serviceSubtitle')}
               </div>
             </div>
           </div>
@@ -22,7 +25,7 @@ export default function Helpfull() {
                   <span className={elm.iconClass} />
                 </div>
                 <h6>
-                  <a href="#">{elm.text}</a>
+                  <a href="#">{t(elm.textKey)}</a>
                 </h6>
               </div>
             </div>

@@ -1,17 +1,19 @@
 import React from "react";
 import { FaChalkboardTeacher } from "react-icons/fa";
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Service3() {
+  const { t } = useLanguage();
+
   return (
     <section id="service3" className="py-5" style={{ background: "#f9fafb" }}>
       <div className="container">
         <div className="row align-items-center justify-content-between flex-md-row flex-column-reverse">
           <div className="col-md-6">
             <div className="bg-white rounded-4 shadow-sm p-5">
-              <h3 className="fw-bold text-dark mb-3">E-Learning Setup</h3>
+              <h3 className="fw-bold text-dark mb-3">{t('service3Title')}</h3>
               <p className="text-muted mb-4">
-                Empower your team with custom e-learning platforms and AI-powered training
-                solutions for continuous growth and upskilling.
+                {t('service3Description')}
               </p>
               <a
                 href="#contact"
@@ -24,7 +26,7 @@ export default function Service3() {
                   transition: "all 0.3s",
                 }}
               >
-                Get Started →
+                {t('getInTouch')} →
               </a>
             </div>
           </div>

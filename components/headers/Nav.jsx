@@ -2,12 +2,16 @@
 import { menuItems } from "@/data/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Nav() {
   const pathname = usePathname();
+  const { t } = useLanguage();
+
   const isParentActive = (links) => {
     return links.some((elm) => elm.url.split("/")[1] == pathname.split("/")[1]);
   };
+
   return (
     <>
       {menuItems.map((item, index) => (
@@ -27,10 +31,10 @@ export default function Nav() {
           }`}
         >
           {item.hasChildren ? (
-            <a href={item.url}>{item.text}</a>
+            <a href={item.url}>{t(item.textKey)}</a>
           ) : (
             <Link className={`menu-item `} href={item.url}>
-              {item.text}
+              {t(item.textKey)}
             </Link>
           )}
           {item.subMenu && item.subMenu.length > 0 && (
@@ -44,7 +48,7 @@ export default function Nav() {
                       : ""
                   }`}
                 >
-                  <Link href={subItem.url}>{subItem.text}</Link>
+                  <Link href={subItem.url}>{t(subItem.textKey)}</Link>
                 </li>
               ))}
             </ul>

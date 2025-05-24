@@ -1,24 +1,24 @@
 export const menuItems = [
   {
     id: 1,
-    text: "Home",
+    textKey: "home",
     url: "#",
     subMenu: [
       {
-        text: "Home Social Media",
+        textKey: "homeSocialMedia",
         url: "/",
         isActive: true,
       },
       {
-        text: "Home Coding Assistant",
+        textKey: "homeCodingAssistant",
         url: "/home-2",
       },
       {
-        text: "Home Image Generator",
+        textKey: "homeImageGenerator",
         url: "/home-3",
       },
       {
-        text: "Home AI Copywriting",
+        textKey: "homeAICopywriting",
         url: "/home-4",
       },
     ],
@@ -27,19 +27,19 @@ export const menuItems = [
   },
   {
     id: 2,
-    text: "About Us",
+    textKey: "about",
     url: "#",
     subMenu: [
       {
-        text: "About",
+        textKey: "about",
         url: "/about",
       },
       {
-        text: "FAQs",
+        textKey: "faqs",
         url: "/faqs",
       },
       {
-        text: "404",
+        textKey: "error404",
         url: "/404",
       },
     ],
@@ -47,15 +47,15 @@ export const menuItems = [
   },
   {
     id: 3,
-    text: "Use Cases",
+    textKey: "useCases",
     url: "#",
     subMenu: [
       {
-        text: "Use Cases",
+        textKey: "useCases",
         url: "/use-cases",
       },
       {
-        text: "Use Cases Detail",
+        textKey: "useCasesDetail",
         url: "/use-cases-details/1",
       },
     ],
@@ -63,15 +63,15 @@ export const menuItems = [
   },
   {
     id: 4,
-    text: "Shop",
+    textKey: "shop",
     url: "#",
     subMenu: [
       {
-        text: "Shop",
+        textKey: "shop",
         url: "/shop",
       },
       {
-        text: "Single Product",
+        textKey: "singleProduct",
         url: "/single-product/1",
       },
     ],
@@ -79,15 +79,15 @@ export const menuItems = [
   },
   {
     id: 5,
-    text: "Blog",
+    textKey: "blog",
     url: "#",
     subMenu: [
       {
-        text: "Blog",
+        textKey: "blog",
         url: "/blog",
       },
       {
-        text: "Blog Detail",
+        textKey: "blogDetail",
         url: "/blog-detail/1",
       },
     ],
@@ -95,7 +95,7 @@ export const menuItems = [
   },
   {
     id: 6,
-    text: "Contact",
+    textKey: "contact",
     url: "/contact-us",
   },
 ];

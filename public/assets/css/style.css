@@ -35,6 +35,12 @@
 
 /* Reset Browsers
 -------------------------------------------------------------- */
+:root {
+  --brand-primary: #6844ed;
+  --brand-secondary: #e6f85e;
+  --brand-dark: #1f1f1f;
+  --brand-font: 'Space Grotesk', sans-serif;
+}
 html,
 body,
 div,
@@ -123,7 +129,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: inherit;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
@@ -2800,4 +2806,52 @@ ul.wg-menu li a:hover {
 
 .page-yellow .tf-mouse-outer {
   border-color: #e6f85e;
+}
+
+/* RTL Support */
+html[dir="rtl"] {
+  text-align: right;
+}
+
+html[dir="rtl"] .header-right {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .menu-primary-menu {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .menu-primary-menu .sub-menu {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .icon-arrow-right2::before {
+  content: "\e91f";
+  transform: rotate(180deg);
+}
+
+html[dir="rtl"] .mobile-button {
+  right: auto;
+  left: 15px;
+}
+
+html[dir="rtl"] .search-form .icon-search {
+  right: auto;
+  left: 23px;
+}
+
+html[dir="rtl"] .breadcrumbs .icon-arrow-right::before {
+  content: "\e91f";
+  transform: rotate(180deg);
+}
+
+html[dir="rtl"] .breadcrumbs li:first-child {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+html[dir="rtl"] .breadcrumbs li:first-child::after {
+  right: auto;
+  left: 0;
 }

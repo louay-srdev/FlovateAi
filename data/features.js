@@ -1,33 +1,38 @@
 export const listItems = [
   {
     id: 1,
-    text: "Save time Rapid AI-driven generation.",
+    textKey: "feature1",
   },
   {
     id: 2,
-    text: "No Outdates Continuous code documentation refresh.",
+    textKey: "feature2",
   },
   {
     id: 3,
-    text: "Consistency Consistent code documentation.",
-  },
-];
-export const listItems2 = [
-  {
-    id: 1,
-    text: "Social Media Prompt",
-  },
-  {
-    id: 2,
-    text: "Generate Post",
-  },
-  {
-    id: 3,
-    text: "Customize the Prompt",
+    textKey: "feature3",
   },
   {
     id: 4,
-    text: "Share Post",
+    textKey: "feature4",
+  },
+];
+
+export const listItems2 = [
+  {
+    id: 1,
+    textKey: "feature2_1",
+  },
+  {
+    id: 2,
+    textKey: "feature2_2",
+  },
+  {
+    id: 3,
+    textKey: "feature2_3",
+  },
+  {
+    id: 4,
+    textKey: "feature2_4",
   },
 ];
 

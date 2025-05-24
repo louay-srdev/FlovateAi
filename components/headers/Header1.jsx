@@ -4,10 +4,14 @@ import Link from "next/link";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function Header1() {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollHeight(window.scrollY);
@@ -33,7 +37,7 @@ export default function Header1() {
                 width={180}
                 height={80}
                 id="logo_header"
-                src="/assets/images/logo/english-logo.png"
+                src={language === 'en' ? "/assets/images/logo/english-logo.png" : "/assets/images/logo/english-logo.png"}
                 alt="Flovate Logo"
               />
             </Link>
@@ -59,7 +63,7 @@ export default function Header1() {
                 <fieldset className="search">
                   <input
                     type="search"
-                    placeholder="Search..."
+                    placeholder={t('search')}
                     className="style-1"
                     name="search"
                     tabIndex={2}
@@ -74,12 +78,12 @@ export default function Header1() {
           </div>
         </nav>
         {/* /#main-nav */}
-        <div className="header-right">
-          <Link href={`/contact-us`} className="sign-in">
-            Sign In
+        <div className="header-right font-seanor">
+          <Link href={`/`} onClick={toggleLanguage} className="sign-in">
+            {language === 'en' ? 'Arabic' : 'انجليزيه'}
           </Link>
           <Link href={`/contact-us`} className="tf-button get-start h45">
-            <span>Free Consultation</span>
+            <span>{t('freeConsultation')}</span>
             <i className="icon-arrow-right2" />
           </Link>
         </div>
@@ -100,11 +104,10 @@ export default function Header1() {
           <Link href={`/`} rel="home" className="main-logo">
             <Image
               id="mobile-logo_header"
-              src="/assets/images/logo/logo.png"
+              src={language === 'en' ? "/assets/images/logo/english-logo.png" : "/assets/images/logo/english-logo.png"}
               width={166}
               alt="image"
               height={40}
-              data-retina="/assets/images/logo/logo@2x.png"
             />
           </Link>
           <div

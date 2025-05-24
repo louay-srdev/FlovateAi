@@ -4,6 +4,7 @@ import "../public/assets/css/main.css";
 
 import { usePathname } from "next/navigation";
 import { ToastContainer } from "react-toastify";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -20,18 +21,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ToastContainer
-          position="top-right"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-        {children}
+        <LanguageProvider>
+          <ToastContainer
+            position="top-right"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

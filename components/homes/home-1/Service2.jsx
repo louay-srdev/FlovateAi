@@ -1,17 +1,19 @@
 import React from "react";
 import { FaPuzzlePiece } from "react-icons/fa";
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Service2() {
+  const { t } = useLanguage();
+
   return (
     <section id="service2" className="py-5" style={{ background: "#f9fafb" }}>
       <div className="container">
         <div className="row align-items-center justify-content-between flex-md-row-reverse flex-column-reverse">
           <div className="col-md-6">
             <div className="bg-white rounded-4 shadow-sm p-5">
-              <h3 className="fw-bold text-dark mb-3">Build & Integrate</h3>
+              <h3 className="fw-bold text-dark mb-3">{t('service2Title')}</h3>
               <p className="text-muted mb-4">
-                Custom development and seamless integration of AI tools into your existing
-                systems, tailored to your unique business needs.
+                {t('service2Description')}
               </p>
               <a
                 href="#contact"
@@ -24,7 +26,7 @@ export default function Service2() {
                   transition: "all 0.3s",
                 }}
               >
-                Get Started →
+                {t('getInTouch')} →
               </a>
             </div>
           </div>

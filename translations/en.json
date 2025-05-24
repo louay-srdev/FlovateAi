@@ -1,0 +1,68 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "useCases": "Use Cases",
+    "shop": "Shop",
+    "blog": "Blog",
+    "contact": "Contact",
+    "subMenu": {
+      "homeSocialMedia": "Home Social Media",
+      "homeCodingAssistant": "Home Coding Assistant",
+      "homeImageGenerator": "Home Image Generator",
+      "homeAICopywriting": "Home AI Copywriting",
+      "about": "About",
+      "faqs": "FAQs",
+      "useCases": "Use Cases",
+      "useCasesDetail": "Use Cases Detail",
+      "shop": "Shop",
+      "singleProduct": "Single Product",
+      "blog": "Blog",
+      "blogDetail": "Blog Detail"
+    }
+  },
+  "header": {
+    "freeConsultation": "Free Consultation",
+    "arabic": "Arabic"
+  },
+  "banner": {
+    "title": "Transform Your Business Operations With",
+    "subtitle": "Boost Your Business With AI Digital Tools And Smart Solutions Like CRM, ERP And More",
+    "buttons": {
+      "automate": "Automate & Optimize",
+      "build": "Build & Integrate",
+      "elearning": "E-Learning Setup"
+    }
+  },
+  "about": {
+    "title": "We are here for Entrepreneurs, Businesses, and Teams",
+    "subtitle": "To transform their operations from friction to flow through a wide range of AI-driven solutions, powered by our trusted partners.",
+    "button": "Get in Touch"
+  },
+  "services": {
+    "title": "What We Provide",
+    "subtitle": "Discover More Helpful Social Media Artificial Intelligence Features",
+    "items": {
+      "manageAccount": "Manage Your Account",
+      "generateAccount": "Generate Your Account",
+      "customizeMedia": "Customize Your media post",
+      "engageSocial": "Engage your Social post",
+      "publishSocial": "Publish your social post",
+      "analyzeMedia": "Analyze Media Generator"
+    }
+  },
+  "cta": {
+    "title": "Empower your business flow.",
+    "subtitle": "Let's chat about your specific challenges and see how Flovate can help. Book a free, no-obligation Discovery Call today.",
+    "button": "Book Your Free Call Now"
+  },
+  "serviceOverview": {
+    "title": "Practical Solutions for Your SME",
+    "items": {
+      "aiSolutions": {
+        "title": "AI Solutions: Automate & Optimize",
+        "description": "We streamline your day-to-day processes and use smart AI to cut out repetitive work, saving you time and effort."
+      }
+    }
+  }
+} 

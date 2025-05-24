@@ -1,17 +1,19 @@
 import React from "react";
 import { FaCogs } from "react-icons/fa";
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Service1() {
+  const { t } = useLanguage();
+
   return (
     <section id="service1" className=" py-5" style={{ background: "#f9fafb", marginTop: "100px" }}>
       <div className="container">
         <div className="row align-items-center justify-content-between flex-md-row flex-column-reverse">
           <div className="col-md-6">
             <div className="bg-white rounded-4 shadow-sm p-5">
-              <h3 className="fw-bold text-dark mb-3">Automate & Optimize</h3>
+              <h3 className="fw-bold text-dark mb-3">{t('service1Title')}</h3>
               <p className="text-muted mb-4">
-                Streamline your business processes with our automation and optimization
-                solutions, designed to boost efficiency and reduce manual effort.
+                {t('service1Description')}
               </p>
               <a
                 href="#contact"
@@ -24,7 +26,7 @@ export default function Service1() {
                   transition: "all 0.3s",
                 }}
               >
-                Get Started →
+                {t('getInTouch')} →
               </a>
             </div>
           </div>

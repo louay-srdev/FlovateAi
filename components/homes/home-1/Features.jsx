@@ -1,8 +1,12 @@
+"use client";
 import { listItems } from "@/data/features";
 import React from "react";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Design() {
+  const { t } = useLanguage();
+
   return (
     <div className="wg-create-design pt-130">
       <div className="themesflat-container">
@@ -77,27 +81,24 @@ export default function Design() {
           <div className="col-md-6">
             <div className="content">
               <div className="heading-section wow fadeInUp style-2">
-                <h6>Create Amazing Design</h6>
+                <h6>{t('featuresTitle')}</h6>
                 <div className="main-title">
-                  All the Creative Tools you <br /> Need in{" "}
-                  <span className="animation-text">One Platform</span>
+                  {t('featuresSubtitle')}
                 </div>
               </div>
               <p className="">
-                We denounce with righteous indignation and dislike men who are
-                beguiled and demoralized by the charms of pleasure of the moment
-                blinded desire that they cannot foresee and trouble
+                {t('featuresDescription')}
               </p>
               <ul className="list-item">
                 {listItems.map((elm, i) => (
                   <li key={i}>
                     <i className="icon-tick" />
-                    {elm.text}
+                    {t(elm.textKey)}
                   </li>
                 ))}
               </ul>
               <a href="#" className="tf-button type-1">
-                <span>Generate AI Post</span>
+                <span>{t('generateAIPost')}</span>
                 <i className="icon-arrow-right2" />
               </a>
             </div>
