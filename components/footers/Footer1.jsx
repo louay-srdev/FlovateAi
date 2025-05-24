@@ -61,8 +61,9 @@ export default function Footer1() {
           <div className="col-md-3">
             <div className="footer-title">About</div>
             <p className="text">
-              At vero eoset accusamus et iusto <br /> odio dignissimos ducimus
-              blanditiis praesentium voluptatu dele
+              We are here for Entrepreneurs, Businesses, and Teams To transform
+              their operations from friction to flow through a wide range of
+              AI-driven solutions, powered by our trusted partners.
             </p>
             <ul className="wg-social">
               {socialMediaIcons.map((icon, index) => (
@@ -133,7 +134,7 @@ export default function Footer1() {
               <p className="text mb-0">
                 Copyright @{new Date().getFullYear()},{" "}
                 <a className="tf-color" href="#">
-                  MunAi
+                  Flovate.ai
                 </a>{" "}
                 All Rights Reserved
               </p>
