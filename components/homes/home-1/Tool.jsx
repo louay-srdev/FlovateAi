@@ -1,18 +1,20 @@
+import { useLanguage } from "@/context/LanguageContext";
 import { tools } from "@/data/tools";
 import React from "react";
 
 export default function Tool() {
+  const { t } = useLanguage();
   return (
     <div className="list-tool">
       <div className="themesflat-container">
         <div className="row justify-center">
           <div className="col-12">
             <div className="heading-section text-center wow fadeInUp">
-              <h6>Enhance Your Social Media</h6>
+              <h6>{t("toolTitle")}</h6>
               <div className="main-title">
-                Why Choose Flovate.ai's AI-POWERED
-                <br />Social Media{" "}
-                <span className="animation-text">Post Generator</span>
+                {t("toolSubtitle")}
+                <br />
+                <span className="animation-text">{t("toolAnimated")}</span>
               </div>
             </div>
           </div>
@@ -24,9 +26,9 @@ export default function Tool() {
               >
                 <div className={`icon ${tool.iconClass}`} />
                 <h3>
-                  <a href="#">{tool.title}</a>
+                  <a href="#">{t(tool.title)}</a>
                 </h3>
-                <p>{tool.description}</p>
+                <p>{t(tool.description)}</p>
                 <div className="order">{tool.order}</div>
               </div>
             </div>

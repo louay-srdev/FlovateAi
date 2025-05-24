@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
-import Image from "next/image";
-import Counter from "@/components/common/Counter";
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function Banner() {
+  const { t } = useLanguage();
   return (
     <div className="wg-banner-1">
       <div className="bg-item">
@@ -164,7 +166,7 @@ export default function Banner() {
           <div className="col-xl-6 col-12">
             <div className="content">
               <div className="title">
-                Transform Your Business Operations With
+                {t("banner.title")}
                 <br />
                 <span className="animationtext letters rotate-3 animation-text tf-color">
                   <span className="cd-words-wrapper">
@@ -191,20 +193,16 @@ export default function Banner() {
                   </span>
                 </span>
               </div>
-              <p>
-                Boost Your Buisness With AI Digital Tools And Smart
-                <br />
-                Solutions Like CRM, ERP And More
-              </p>
+              <p>{t("banner.subtitle")}</p>
               <div className="grid-button flex gap10 items-center">
                 <a href="#service-automate" className="tf-button">
-                  <span>Automate & Optimize</span>
+                  <span>{t("banner.buttons.button1")}</span>
                 </a>
                 <a href="#service-integrate" className="tf-button active">
-                  <span>Build & Integrate</span>
+                  <span>{t("banner.buttons.button2")}</span>
                 </a>
                 <a href="#service-learn" className="tf-button active">
-                  <span>E-Learning Setup</span>
+                  <span>{t("banner.buttons.button3")}</span>
                 </a>
               </div>
             </div>

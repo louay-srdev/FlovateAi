@@ -1,17 +1,20 @@
 import { roadMapItems } from "@/data/roadmap";
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Roadmap() {
+  const { t } = useLanguage();
   return (
     <div className="wg-road-map pt-130 pb-130">
       <div className="themesflat-container">
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center wow fadeInUp">
-              <h6>Our Client-Focused Project Approach</h6>
+              <h6>{t("roadmap.heading")}</h6>
               <div className="main-title">
-              We follow a clear, collaborative process <br />to ensure project success and 
-                Content <span className="animation-text">client satisfaction</span>
+              {t("roadmap.subheading1")} <br />
+                {t("roadmap.subheading2")}{" "}
+                <span className="animation-text">{t("roadmap.subheading3")}</span>
               </div>
             </div>
           </div>
@@ -22,11 +25,11 @@ export default function Roadmap() {
                   className={`road-map-item item-${index + 1} wow fadeInUp`}
                   key={index}
                 >
-                  <div className="number">{item.number}</div>
+                  <div className="number">{t(item.number)}</div>
                   <h4>
-                    <a href={item.link}>{item.title}</a>
+                    <a href={item.link}>{t(item.title)}</a>
                   </h4>
-                  <p>{item.description}</p>
+                  <p>{t(item.description)}</p>
                   <span className="arrow">
                     <svg
                       width={51}
